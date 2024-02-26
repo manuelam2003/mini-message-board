@@ -1,0 +1,10 @@
+h2 Add a new message
+
+form(method="POST", action="/new")
+  label(for="authorName") Author:
+  input(type="text", id="authorName", name="authorName", required)
+
+  label(for="messageText") Message:
+  input(type="text", id="messageText", name="messageText", required)
+
+  button(type="submit") Submit

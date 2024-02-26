@@ -2,4 +2,11 @@ extends layout
 
 block content
   h1= title
+  a(href="/new") To Form
   p Welcome to #{title}
+  ul 
+    each message in messages 
+      li 
+        p User: #{message.user}
+        p Text: #{message.text}
+        p Date: #{message.date}
